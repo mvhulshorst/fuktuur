@@ -8,6 +8,26 @@
         {% endblock %}
     </head>
     <body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="/default">Home</a>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/klant">Klant</a>
+                            <a class="nav-link" href="/product">Product</a>
+                            <a class="nav-link" href="/factuur">Factuur</a>
+                            <a class="nav-link" href="/factuurregel">Factuurregel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
